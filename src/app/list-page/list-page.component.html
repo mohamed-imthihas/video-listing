@@ -1,0 +1,10 @@
+<div infiniteScroll (scrolled)="loadVideoList()"
+[infiniteScrollDistance]="0.1">
+  <app-header [title]="pageData?.title"></app-header>
+  <div class="container" [@listAnimation]="videoList.length">
+    <div class="item" *ngFor="let content of videoList">
+      <img [src]='content.posterImage' appDefaultPoster [alt]="content.name"/>
+      <h5>{{content.name}}</h5>
+    </div>
+  </div>
+</div>

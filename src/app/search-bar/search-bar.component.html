@@ -1,0 +1,20 @@
+<div class="search-field-container">
+  <button class="back-btn" (click)="onClose()"><i class="back-icon"></i></button>
+  <input type="text" id="searchField" [(ngModel)]="searchText" (input)="search()" placeholder="Start searching" #searchField>
+  <span><i class="search-icon"></i></span>
+</div>
+<div *ngIf="!searchText" class="search-tip">
+  <span>Search for videos</span>
+</div>
+<div class="search-loader" *ngIf="isLoading">
+  <span>Loading results...</span>
+</div>
+<div class="search-results" *ngIf="searchText && !isLoading">
+  <div *ngIf="searchResults?.length == 0" class="no-result">
+    <span>No results found... Try something else.</span>
+  </div>
+  <div *ngFor="let video of searchResults" class="item">
+    <img [src]="video.posterImage" appDefaultPoster [alt]="video.name">
+    <span class="title">{{video.name}}</span>
+  </div>
+</div>

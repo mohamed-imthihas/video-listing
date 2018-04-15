@@ -1,0 +1,10 @@
+<div class="wrapper" *ngIf="message">
+  <div class="dialog">
+    <div class="error-body">
+      {{message}}
+    </div>
+    <div class="error-footer">
+      <button (click)="message=''">Ok</button>
+    </div>
+  </div>
+</div>

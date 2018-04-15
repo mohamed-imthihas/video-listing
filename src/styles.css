@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #000;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+i.back-icon{
+    background-image: url(assets/images/Back.png);
+}
+i.search-icon{
+    background-image: url(assets/images/search.png);
+}

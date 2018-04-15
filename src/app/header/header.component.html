@@ -1,0 +1,6 @@
+<header>
+  <button class="back-btn"><i class="back-icon"></i></button>
+  <h1>{{title}}</h1>
+  <button class="search-btn" (click)="showSearch = true"><i class="search-icon"></i></button>
+  <app-search-bar *ngIf="showSearch" (onClosed)="showSearch = false"></app-search-bar>
+</header>

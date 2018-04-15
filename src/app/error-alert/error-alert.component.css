@@ -1,0 +1,36 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background: rgba(0,0,0,0.5);
+}
+.dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 4px #666;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+}
+.error-body{
+    padding: 20px 10px;
+    border-bottom: 1px solid #666;
+}
+.error-footer button{
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+.error-footer button:focus{
+    background-color: #00bcd4;
+}

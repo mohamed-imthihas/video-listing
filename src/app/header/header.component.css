@@ -1,0 +1,28 @@
+:host{
+    height: 65px;
+    display: inline-block;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 15px 14px;
+    position: fixed;
+    width: 100%;
+    background: url(../../assets/images/nav_bar.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+h1{
+    color: #fff;
+    flex-grow: 2;
+    margin: 0px 17px;
+    font-size: 18px;
+    font-weight: 300;   
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+}
